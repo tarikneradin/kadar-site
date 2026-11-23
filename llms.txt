@@ -1,0 +1,37 @@
+# MatchCast
+
+> MatchCast is an iPhone app for football clubs. One phone films the match, puts a live scoreboard and graphics into the picture, and streams it to YouTube or Facebook (one destination at a time) or records it to the phone. Not yet in the App Store.
+
+## What it does
+
+- Scoreboard in the video: score, clock, halves, extra time, penalty shoot-out; eight designs, six positions, four sizes
+- Streams to YouTube or Facebook; PRO adds TikTok, Instagram and custom RTMP. One destination at a time
+- Records to the phone with the scoreboard in the picture, with or without a stream
+- Instant replay in a corner window while the live picture continues, with a caption under it (player, number, club, minute) and a spotlight on a tapped player (PRO)
+- Clip studio (PRO): after the match, add a spotlight and a caption to a highlight and export it as a video ready to post
+- The spotlight follows one tapped player in one clip. The app does not track the ball and produces no tactics or player statistics
+- Automatic highlights: every goal and every marked moment becomes a clip; clips are joined into one reel
+- Leagues and cups (PRO): generated schedule, results written into the table, table and bracket as broadcast graphics and as a picture to share. Stored on one phone
+- Sponsor logos, sliding text ticker, ad-break slide, prize draw, line-up graphic, scoring from a second phone (PRO)
+- Players typed in or read from a photographed team sheet on the device
+- Reconnects by itself after a network drop and keeps recording locally meanwhile
+- Languages: English, Bosnian, Croatian, Serbian, Slovenian, Macedonian, Albanian
+
+## Limits today
+
+- Live streaming works on iPhone only; Android can record but not stream
+- One streaming destination at a time
+- Football is the only sport switched on
+- A competition is stored on the phone that created it
+
+## Pricing
+
+- Free: streaming to YouTube or Facebook with the scoreboard, score and clock control, recording, players, highlights, match history
+- PRO: planned at €6.99 a month or €49.99 a year with a 7-day free trial; the App Store price applies
+
+## Links
+
+- [Home](https://matchcast.app/): overview, features, Free and PRO, questions
+- [Bosnian](https://matchcast.app/bs/): the same page in Bosnian
+- [Privacy](https://matchcast.app/privacy.html): data handling
+- [Terms](https://matchcast.app/terms.html): subscription terms
