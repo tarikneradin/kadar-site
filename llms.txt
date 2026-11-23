@@ -1,6 +1,6 @@
-# MatchCast
+# Kadar
 
-> MatchCast is an iPhone app for football clubs. One phone films the match, puts a live scoreboard and graphics into the picture, and streams it to YouTube or Facebook (one destination at a time) or records it to the phone. Not yet in the App Store.
+> Kadar is an iPhone app for football clubs. One phone films the match, puts a live scoreboard and graphics into the picture, and streams it to YouTube or Facebook (one destination at a time) or records it to the phone. Not yet in the App Store.
 
 ## What it does
 
@@ -12,6 +12,7 @@
 - The spotlight follows one tapped player in one clip. The app does not track the ball and produces no tactics or player statistics
 - Automatic highlights: every goal and every marked moment becomes a clip; clips are joined into one reel
 - Leagues and cups (PRO): generated schedule, results written into the table, table and bracket as broadcast graphics and as a picture to share. Stored on one phone
+- Sponsor pop-ups (PRO): a plate with a sponsor's logo and a line of text rises into a free corner of the picture for 8 seconds, every 2, 5 or 10 minutes or on demand; it never covers the scoreboard, the LIVE sign, a replay or a full-picture slide
 - Sponsor logos, sliding text ticker, ad-break slide, prize draw, line-up graphic, scoring from a second phone (PRO)
 - Players typed in or read from a photographed team sheet on the device
 - Reconnects by itself after a network drop and keeps recording locally meanwhile

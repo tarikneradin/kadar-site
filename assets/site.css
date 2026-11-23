@@ -92,10 +92,11 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 600; color: var(
 .navbar { position: sticky; top: 0; z-index: 50; background: var(--bg); border-bottom: 1px solid var(--line-subtle); }
 .nav { display: flex; align-items: center; justify-content: space-between; gap: var(--space-3); min-height: 68px; }
 .brand {
-  display: inline-flex; align-items: center; gap: 10px; flex: none; min-height: var(--size-touch);
-  font: 700 24px/1 var(--font-display); letter-spacing: -.04em; color: var(--ink); text-decoration: none;
+  /* The kit's lockup: mark at 1.4em, wordmark in the display face, weight 700, -0.05em. */
+  display: inline-flex; align-items: center; gap: .2em; flex: none; min-height: var(--size-touch);
+  font: 700 26px/1 var(--font-display); letter-spacing: -.05em; color: var(--ink); text-decoration: none;
 }
-.brand img { border-radius: 8px; }
+.brand img { width: 1.4em; height: 1.4em; flex: none; }
 .nav-links { display: none; gap: var(--space-8); }
 .nav-links a { display: inline-flex; align-items: center; min-height: var(--size-touch); color: var(--ink-muted); font-size: 15px; font-weight: 500; text-decoration: none; }
 .nav-links a:hover { color: var(--ink); }
@@ -255,7 +256,7 @@ footer { border-top: 1px solid var(--line-subtle); padding: var(--space-8) 0 48p
   .foot-note { flex-basis: 100%; }
 }
 @media (max-width: 419px) {
-  .brand { font-size: 21px; gap: 8px; }
+  .brand { font-size: 23px; }
   .nav .btn-sm { padding: 6px 14px; }
   .lang a { min-width: 40px; padding: 0 6px; }
 }
