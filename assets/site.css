@@ -44,7 +44,8 @@
 *, *::before, *::after { box-sizing: border-box; }
 html { scroll-behavior: smooth; scroll-padding-top: 80px; -webkit-text-size-adjust: 100%; }
 body {
-  margin: 0; background: var(--bg); color: var(--ink-muted);
+  /* Leopard spots deep in the ground, one shade lighter than it. */
+  margin: 0; background: var(--bg) url("leopard.svg") 0 0 / 560px 560px; color: var(--ink-muted);
   font: 400 16px/1.55 var(--font-sans);
   -webkit-font-smoothing: antialiased; overflow-wrap: break-word;
 }
@@ -103,7 +104,7 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 600; color: var(
 .menu-btn { display: none; place-items: center; width: var(--size-touch); height: var(--size-touch); padding: 0; border: 1px solid var(--line-emphasis); border-radius: var(--radius-pill); background: transparent; color: var(--ink); cursor: pointer; }
 .menu-btn .mb-close, .navbar.open .menu-btn .mb-open { display: none; }
 .navbar.open .menu-btn .mb-close { display: inline; }
-.nav-cta { display: none; }
+.nav-links .nav-cta { display: none; }
 .nav-tools { display: flex; align-items: center; gap: var(--space-2); }
 .lang { display: flex; gap: var(--space-1); }
 .lang a {
@@ -116,7 +117,7 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 600; color: var(
 
 /* ---------- sections ---------- */
 .section { padding-top: var(--pad-section); padding-bottom: var(--pad-section); }
-.band { background: var(--bg-raised); border-top: 1px solid var(--line-subtle); border-bottom: 1px solid var(--line-subtle); }
+.band { background: var(--bg-raised) url("leopard.svg") 260px 130px / 560px 560px; border-top: 1px solid var(--line-subtle); border-bottom: 1px solid var(--line-subtle); }
 .stack { display: flex; flex-direction: column; gap: var(--gap-head); }
 .head { display: flex; flex-direction: column; gap: var(--space-4); }
 .head h2 { font-size: var(--fs-section); line-height: 1.05; letter-spacing: -.03em; max-width: 30ch; }
