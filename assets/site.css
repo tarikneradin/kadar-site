@@ -270,6 +270,15 @@ footer { border-top: 1px solid var(--line-subtle); padding: var(--space-8) 0 48p
 .legal h2 { font-size: 24px; line-height: 1.2; letter-spacing: -.02em; padding-top: var(--space-5); }
 .legal b { color: var(--ink); font-weight: 600; }
 .legal ul { list-style: disc; padding-left: 22px; display: flex; flex-direction: column; gap: var(--space-2); }
+.post-h { font-size: 20px; line-height: 1.25; letter-spacing: -.01em; }
+.post-h a { color: inherit; text-decoration: none; }
+.post-h a:hover { text-decoration: underline; text-underline-offset: 4px; }
+.blog-h1 { font-size: var(--fs-section); line-height: 1.05; letter-spacing: -.03em; }
+.article p, .article li { font-size: 17px; line-height: 1.65; color: var(--ink-soft); }
+.article ol { list-style: decimal; padding-left: 24px; display: flex; flex-direction: column; gap: var(--space-2); }
+.article .eyebrow a { color: inherit; text-decoration: none; }
+.post-cta { margin-top: var(--space-8); }
+.post-cta h2 { padding-top: 0; }
 .legal .updated { color: var(--ink-quiet); font-size: 14px; }
 
 /* ---------- wider screens ---------- */
