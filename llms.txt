@@ -32,7 +32,7 @@
 
 ## Links
 
-- [Home](https://matchcast.app/): overview, features, Free and PRO, questions
-- [Bosnian](https://matchcast.app/bs/): the same page in Bosnian
-- [Privacy](https://matchcast.app/privacy.html): data handling
-- [Terms](https://matchcast.app/terms.html): subscription terms
+- [Home](https://tarikneradin.github.io/kadar-site/): overview, features, Free and PRO, questions
+- [Bosnian](https://tarikneradin.github.io/kadar-site/bs/): the same page in Bosnian
+- [Privacy](https://tarikneradin.github.io/kadar-site/privacy.html): data handling
+- [Terms](https://tarikneradin.github.io/kadar-site/terms.html): subscription terms
