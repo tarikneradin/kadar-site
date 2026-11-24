@@ -37,13 +37,14 @@
 <header class="navbar">
   <div class="wrap nav">
     <a class="brand" href="#"><img src="assets/kadar-mark-reversed.svg" width="34" height="34" alt="">Kadar</a>
-    <nav class="nav-links" aria-label="Main">
+    <nav class="nav-links" id="site-menu" aria-label="Main">
       <a href="#how">How it works</a>
       <a href="#features">Features</a>
       <a href="#plans">Pricing</a>
       <a href="#download">Download</a>
       <a href="#faq">Questions</a>
       <a href="blog/index.html">Blog</a>
+      <a class="btn nav-cta" href="mailto:info@mastery.ba?subject=Kadar%3A%20tell%20me%20when%20it%20is%20out&amp;body=Please%20let%20me%20know%20when%20Kadar%20is%20in%20the%20App%20Store.%0A%0AClub%20%28optional%29%3A">Tell me when it's out</a>
     </nav>
     <div class="nav-tools">
       <nav class="lang" aria-label="Language">
@@ -51,6 +52,9 @@
         <a href="bs/index.html" lang="bs" hreflang="bs"><abbr title="Bosanski">BS</abbr></a>
       </nav>
       <a class="btn btn-secondary btn-sm" href="mailto:info@mastery.ba?subject=Kadar%3A%20tell%20me%20when%20it%20is%20out&amp;body=Please%20let%20me%20know%20when%20Kadar%20is%20in%20the%20App%20Store.%0A%0AClub%20%28optional%29%3A">Get notified</a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Menu">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path class="mb-open" d="M4 7h16M4 12h16M4 17h16"/><path class="mb-close" d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
     </div>
   </div>
 </header>
@@ -261,7 +265,7 @@
 
     <div class="col">
       <h3 class="more-h" style="font-size:24px;letter-spacing:-.02em">And the rest of the kit</h3>
-      <ul class="grid grid-3">
+      <ul class="grid grid-3 rail">
         <li class="card card-small"><p class="tags"><span class="tag">PRO</span></p><h4>Prize draw on the stream</h4><p>Type the names and the prize. A reel spins through them and stops on the winner.</p></li>
         <li class="card card-small"><p class="tags"><span class="tag">PRO</span></p><h4>Line-up on a pitch</h4><p>Pick a formation, tap players into position and show the starting eleven.</p></li>
         <li class="card card-small"><p class="tags"><span class="tag">PRO</span></p><h4>Scoring from a second phone</h4><p>A colleague keeps the score and the clock from another phone with a short code.</p></li>
@@ -309,10 +313,10 @@
       <p class="eyebrow">Blog</p>
       <h2>Guides for clubs that film their matches</h2>
     </div>
-    <ul class="grid grid-3">
-      <li class="card card-small"><p class="label"><time datetime="2026-11-24">24 November 2026</time></p><h3 class="post-h"><a href="blog/live-stream-football-match-youtube-one-phone.html">How to live stream a football match to YouTube with one phone</a></h3><p>A step-by-step guide for amateur clubs: what to set up on YouTube, where to put the phone, how much mobile data a match uses and how to get a scoreboard into the picture.</p></li>
-      <li class="card card-small"><p class="label"><time datetime="2026-11-24">24 November 2026</time></p><h3 class="post-h"><a href="blog/sponsors-for-your-club-live-stream.html">How a live stream can bring your club sponsors</a></h3><p>Where a sponsor can appear in a match broadcast, what to offer a local business, and how to show them it worked.</p></li>
-      <li class="card card-small"><p class="label"><time datetime="2026-11-24">24 November 2026</time></p><h3 class="post-h"><a href="blog/match-highlights-for-social-media.html">From the final whistle to a post: match highlights for your club&#x27;s social pages</a></h3><p>What to post after a match, in what order, and how to have the clips and the result card ready before you leave the ground.</p></li>
+    <ul class="grid grid-3 rail">
+      <li class="card card-small post-card"><a class="post-thumb" href="blog/live-stream-football-match-youtube-one-phone.html" tabindex="-1" aria-hidden="true"><img src="assets/desk.webp" width="1400" height="647" loading="lazy" alt=""></a><p class="label"><time datetime="2026-11-24">24 November 2026</time></p><h3 class="post-h"><a href="blog/live-stream-football-match-youtube-one-phone.html">How to live stream a football match to YouTube with one phone</a></h3><p>A step-by-step guide for amateur clubs: what to set up on YouTube, where to put the phone, how much mobile data a match uses and how to get a scoreboard into the picture.</p></li>
+      <li class="card card-small post-card"><a class="post-thumb" href="blog/sponsors-for-your-club-live-stream.html" tabindex="-1" aria-hidden="true"><img src="assets/sponsor-popup.webp" width="1280" height="720" loading="lazy" alt=""></a><p class="label"><time datetime="2026-11-24">24 November 2026</time></p><h3 class="post-h"><a href="blog/sponsors-for-your-club-live-stream.html">How a live stream can bring your club sponsors</a></h3><p>Where a sponsor can appear in a match broadcast, what to offer a local business, and how to show them it worked.</p></li>
+      <li class="card card-small post-card"><a class="post-thumb" href="blog/match-highlights-for-social-media.html" tabindex="-1" aria-hidden="true"><img src="assets/studio-clip.webp" width="1280" height="720" loading="lazy" alt=""></a><p class="label"><time datetime="2026-11-24">24 November 2026</time></p><h3 class="post-h"><a href="blog/match-highlights-for-social-media.html">From the final whistle to a post: match highlights for your club&#x27;s social pages</a></h3><p>What to post after a match, in what order, and how to have the clips and the result card ready before you leave the ground.</p></li>
     </ul>
     <p><a class="btn btn-secondary" href="blog/index.html">All articles</a></p>
   </section>
@@ -373,5 +377,15 @@
     <p class="foot-note">© 2026 Kadar. YouTube, Facebook, TikTok, Instagram, WhatsApp, Viber, iPhone, App Store, Android and Google Play are trademarks of their owners. Kadar is not affiliated with them. Match photos: BikeMike, Wikimedia Commons, CC0.</p>
   </div>
 </footer>
+<script>
+(function () {
+  var bar = document.querySelector('.navbar'), btn = document.querySelector('.menu-btn');
+  if (!bar || !btn) return;
+  function set(open) { bar.classList.toggle('open', open); btn.setAttribute('aria-expanded', open ? 'true' : 'false'); }
+  btn.addEventListener('click', function () { set(!bar.classList.contains('open')); });
+  bar.addEventListener('click', function (e) { if (e.target.closest('.nav-links a')) set(false); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') set(false); });
+})();
+</script>
 </body>
 </html>

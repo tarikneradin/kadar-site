@@ -100,6 +100,10 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 600; color: var(
 .nav-links { display: none; gap: var(--space-8); }
 .nav-links a { display: inline-flex; align-items: center; min-height: var(--size-touch); color: var(--ink-muted); font-size: 15px; font-weight: 500; text-decoration: none; }
 .nav-links a:hover { color: var(--ink); }
+.menu-btn { display: none; place-items: center; width: var(--size-touch); height: var(--size-touch); padding: 0; border: 1px solid var(--line-emphasis); border-radius: var(--radius-pill); background: transparent; color: var(--ink); cursor: pointer; }
+.menu-btn .mb-close, .navbar.open .menu-btn .mb-open { display: none; }
+.navbar.open .menu-btn .mb-close { display: inline; }
+.nav-cta { display: none; }
 .nav-tools { display: flex; align-items: center; gap: var(--space-2); }
 .lang { display: flex; gap: var(--space-1); }
 .lang a {
@@ -270,6 +274,10 @@ footer { border-top: 1px solid var(--line-subtle); padding: var(--space-8) 0 48p
 .legal h2 { font-size: 24px; line-height: 1.2; letter-spacing: -.02em; padding-top: var(--space-5); }
 .legal b { color: var(--ink); font-weight: 600; }
 .legal ul { list-style: disc; padding-left: 22px; display: flex; flex-direction: column; gap: var(--space-2); }
+.post-thumb { display: block; margin: calc(-1 * var(--space-2)) calc(-1 * var(--space-2)) 0; }
+.post-thumb img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radius: var(--radius-md); border: 1px solid var(--line); }
+.article figure { margin: var(--space-4) 0; }
+.article .phones { margin: var(--space-4) 0; }
 .post-h { font-size: 20px; line-height: 1.25; letter-spacing: -.01em; }
 .post-h a { color: inherit; text-decoration: none; }
 .post-h a:hover { text-decoration: underline; text-underline-offset: 4px; }
@@ -312,14 +320,17 @@ footer { border-top: 1px solid var(--line-subtle); padding: var(--space-8) 0 48p
 
 /* ---------- phones ---------- */
 @media (max-width: 959px) {
-  html { scroll-padding-top: 124px; }
   .nav { flex-wrap: wrap; row-gap: 0; }
+  .menu-btn { display: inline-grid; }
+  .nav .btn-sm { display: none; }
   .nav-links {
-    display: flex; order: 3; flex-basis: 100%; gap: var(--space-6); overflow-x: auto; scrollbar-width: none;
-    margin-inline: calc(-1 * var(--space-6)); padding-inline: var(--space-6); border-top: 1px solid var(--line-subtle);
+    display: none; order: 3; flex-basis: 100%; flex-direction: column; gap: 0;
+    margin-inline: calc(-1 * var(--space-6)); padding: var(--space-2) var(--space-6) var(--space-6);
+    border-top: 1px solid var(--line-subtle); max-height: calc(100dvh - 68px); overflow-y: auto;
   }
-  .nav-links::-webkit-scrollbar { display: none; }
-  .nav-links a { white-space: nowrap; }
+  .navbar.open .nav-links { display: flex; }
+  .nav-links a:not(.btn) { min-height: 56px; font: 600 20px/1.2 var(--font-display); color: var(--ink); border-bottom: 1px solid var(--line-subtle); }
+  .nav-links .nav-cta { display: inline-flex; justify-content: center; margin-top: var(--space-5); color: var(--on-signal); }
 }
 @media (max-width: 639px) {
   /* The picture on air: taller, edge to edge, graphics half as large again. */
@@ -328,6 +339,12 @@ footer { border-top: 1px solid var(--line-subtle); padding: var(--space-8) 0 48p
   .cta-row { width: 100%; flex-direction: column; }
   .cta-row .btn { width: 100%; justify-content: center; }
   .closer .btn { width: 100%; justify-content: center; }
+  /* Rows of small cards become a rail swiped sideways, so the page stays short. */
+  .rail { display: flex; gap: var(--space-3); overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none;
+    margin-inline: calc(-1 * var(--space-6)); padding-inline: var(--space-6); scroll-padding-inline: var(--space-6); }
+  .rail::-webkit-scrollbar { display: none; }
+  .rail > li { flex: 0 0 82%; scroll-snap-align: start; }
+  .card { padding: var(--space-5); }
   /* Wide screenshots keep a readable size and are swiped sideways. */
   .pan { overflow-x: auto; border: 1px solid var(--line); border-radius: var(--radius-md); }
   .pan img { width: auto; max-width: none; height: 250px; border: 0; border-radius: 0; display: block; }

@@ -83,5 +83,15 @@
     <p class="foot-note">© 2026 Kadar. YouTube, Facebook, TikTok, Instagram, WhatsApp, Viber, iPhone, App Store, Android and Google Play are trademarks of their owners. Kadar is not affiliated with them. Match photos: BikeMike, Wikimedia Commons, CC0.</p>
   </div>
 </footer>
+<script>
+(function () {
+  var bar = document.querySelector('.navbar'), btn = document.querySelector('.menu-btn');
+  if (!bar || !btn) return;
+  function set(open) { bar.classList.toggle('open', open); btn.setAttribute('aria-expanded', open ? 'true' : 'false'); }
+  btn.addEventListener('click', function () { set(!bar.classList.contains('open')); });
+  bar.addEventListener('click', function (e) { if (e.target.closest('.nav-links a')) set(false); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') set(false); });
+})();
+</script>
 </body>
 </html>
